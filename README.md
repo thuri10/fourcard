@@ -1,6 +1,6 @@
 # Frontend Mentor - Four card feature section solution
 
-This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -29,11 +29,10 @@ Users should be able to:
 
 ![Desktop View](./screenshot.png)
 
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/thuri10/fourcard)
-- Live Site URL: [Add live site URL here](https://thuri10.github.io/fourcard)
+- Solution URL: [Four Card](https://github.com/thuri10/fourcard)
+- Live Site URL: [Four Card](https://thuri10.github.io/fourcard)
 
 ## My process
 
@@ -44,11 +43,10 @@ Users should be able to:
 - HTML
 
 ### What I learned
-- Learned and reinforced knowledge on use of `grid-columns` and `grid-rows`
-- Media queries for  grid layout
 
+- Learned and reinforced knowledge on use of `grid-columns` and `grid-rows`
+- Media queries for grid layout
 
 ## Author
 
 - personal blog - [thuri10](https://thuri10.github.io)
-

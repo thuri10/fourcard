@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
 html {
   box-sizing: border-box;
 }
+
+// RESET BROWSER DEFAULT STYLES
 
 *,
 *::after,
@@ -9,6 +12,18 @@ html {
   margin: 0;
   padding: 0;
 }
+
+// Color Schemes
+
+$color-primary-red: hsl(0, 78%, 62%);
+$color-primary-cyan: hsl(180, 62%, 55%);
+$color-primary-orange: hsl(34, 97%, 64%);
+$color-primary-blue: hsl(212, 86%, 64%);
+$color-neutral-darkBlue: hsl(234, 12%, 34%);
+$color-neutral-grayishBlue: hsl(229, 6%, 66%);
+$color-neutral-lightGray: hsl(0, 0%, 98%);
+
+// DEFAULT STYLES
 
 .container {
   max-width: 1440px;
@@ -25,26 +40,28 @@ img {
 .body {
   font-size: 15px;
   font-family: "Poppins", sans-serif;
-  background-color: hsl(0, 0%, 98%);
-  color: hsl(229, 6%, 66%);
+  background-color: $color-neutral-lightGray;
+  color: $color-neutral-grayishBlue;
 }
 
 /* Hero section styles */
+
 .hero {
   margin: 0 auto;
   max-width: 540px;
-}
-.hero p {
-  padding-top: 24px;
-  color: hsl(229, 6%, 66%);
-  text-align: center;
+
+  p {
+    padding-top: 24px;
+    color: $color-neutral-grayishBlue;
+    text-align: center;
+  }
 }
 
 .hero-heading {
   font-size: 2rem;
   text-align: center;
   font-weight: 600;
-  color: hsl(234, 12%, 34%);
+  color: $color-neutral-darkBlue;
 }
 
 .hero-heading_gray {
@@ -65,12 +82,12 @@ img {
   padding: 25px 40px;
   margin: 20px;
   background-color: white;
-  color: hsl(229, 6%, 66%);
+  color: $color-neutral-grayishBlue;
   border-radius: 6px;
 }
 
 .card-heading {
-  color: hsl(234, 12%, 34%);
+  color: $color-neutral-darkBlue;
   font-weight: 600;
   margin-bottom: 12px;
   font-weight: 600;
@@ -86,80 +103,93 @@ img {
 }
 
 .card-1 {
-  border-top: 3.5px solid hsl(180, 62%, 55%);
+  border-top: 3.5px solid $color-primary-cyan;
   grid-column: 1/2;
   grid-row: 1/3;
 }
 
 .card-2 {
-  border-top: 3.5px solid hsl(0, 78%, 62%);
+  border-top: 3.5px solid $color-primary-red;
   grid-column: 2/3;
   grid-row: 1/2;
 }
 
 .card-3 {
-  border-top: 3.5px solid hsl(34, 97%, 64%);
+  border-top: 3.5px solid $color-primary-orange;
   justify-self: center;
   grid-column: 2/3;
   grid-row: 2/3;
 }
 
 .card-4 {
-  border-top: 3.5px solid hsl(212, 86%, 64%);
+  border-top: 3.5px solid $color-primary-blue;
   grid-column: 3/4;
   grid-row: 1/3;
 }
 
 /* Media Queries for Responsive Layouts */
+
 @media (max-width: 852px) {
   .hero-heading {
     font-size: 1.5rem;
   }
+
   .hero > p {
     font-size: 1rem;
   }
+
   .card {
     padding: 16px;
     margin: 8px;
   }
+
   .cards {
     grid-template-columns: unset;
     grid-template-rows: repeat(4, 1fr);
   }
+
   .card-1 {
     grid-column: 1/2;
     grid-row: 1/2;
   }
+
   .card-2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
+
   .card-3 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
+
   .card-4 {
     grid-column: 1/2;
     grid-row: 4/5;
   }
 }
+
 @media (min-width: 852px) and (max-width: 1050px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: unset;
   }
+
   .card-1 {
     grid-column: 1/2;
     grid-row: 1/2;
   }
+
   .card-2 {
     grid-column: 2/3;
     grid-row: 1/2;
   }
+
   .card-3 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
+
   .card-4 {
     grid-column: 2/3;
     grid-row: 2/3;
